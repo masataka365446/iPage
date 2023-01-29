@@ -1,0 +1,6 @@
+framework module Pods_WebLinkApp_WebLinkAppUITests {
+  umbrella header "Pods-WebLinkApp-WebLinkAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
