@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6F-1t-HTl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,227 +19,168 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewt-zR-hMw">
-                                <rect key="frame" x="16" y="136" width="50" height="50"/>
+                                <rect key="frame" x="19" y="134" width="48" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="paintbrush" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="paintbrush" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="themeButton:" destination="kJd-qN-Frn" eventType="touchUpInside" id="8D4-HO-nvp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-ra-ug6">
-                                <rect key="frame" x="16" y="59" width="111" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="キャンセル"/>
-                                <connections>
-                                    <action selector="backButton:" destination="kJd-qN-Frn" eventType="touchUpInside" id="4jd-rA-jQa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohu-Dv-6fY">
-                                <rect key="frame" x="121" y="136" width="50" height="50"/>
+                                <rect key="frame" x="120" y="134" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="house.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="house.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="home:" destination="kJd-qN-Frn" eventType="touchUpInside" id="xFD-gy-bkh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qby-9I-LB6">
-                                <rect key="frame" x="221" y="136" width="50" height="50"/>
+                                <rect key="frame" x="219" y="134" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="mic.square.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="mic.square.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="micsquarefill:" destination="kJd-qN-Frn" eventType="touchUpInside" id="6TN-zY-1jf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq8-76-rBt">
-                                <rect key="frame" x="327" y="136" width="50" height="50"/>
+                                <rect key="frame" x="327" y="134" width="49" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="message.circle.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="message.circle.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="message:" destination="kJd-qN-Frn" eventType="touchUpInside" id="2wB-RX-XxT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-IT-ijj">
-                                <rect key="frame" x="221" y="214" width="50" height="50"/>
+                                <rect key="frame" x="219" y="213" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="cloud.sun.circle.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="cloud.sun.circle.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="cloud:" destination="kJd-qN-Frn" eventType="touchUpInside" id="Ame-ha-5xy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXi-XS-wvu">
-                                <rect key="frame" x="121" y="214" width="50" height="50"/>
+                                <rect key="frame" x="120" y="213" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="camera.circle.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="camera.circle.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="cameracircle:" destination="kJd-qN-Frn" eventType="touchUpInside" id="zTr-ID-LHt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aks-gK-fTy">
-                                <rect key="frame" x="327" y="214" width="50" height="50"/>
+                                <rect key="frame" x="327" y="213" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="person.circle.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="person.circle.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="personcircle:" destination="kJd-qN-Frn" eventType="touchUpInside" id="zj0-eM-lsp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJJ-5z-3Gl">
-                                <rect key="frame" x="121" y="293" width="50" height="50"/>
+                                <rect key="frame" x="120" y="293" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="trash.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="trash.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="trash:" destination="kJd-qN-Frn" eventType="touchUpInside" id="SFm-Ck-tkI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkP-28-ggW">
-                                <rect key="frame" x="20" y="293" width="50" height="50"/>
+                                <rect key="frame" x="18" y="293" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="folder.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="folder.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="folder:" destination="kJd-qN-Frn" eventType="touchUpInside" id="0Ja-RM-I3z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-JH-zMa">
-                                <rect key="frame" x="221" y="293" width="50" height="50"/>
+                                <rect key="frame" x="219" y="293" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="magnifyingglass" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="magnifyingglass:" destination="kJd-qN-Frn" eventType="touchUpInside" id="ZR5-Dh-Rpx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-BO-2vo">
-                                <rect key="frame" x="327" y="293" width="50" height="50"/>
+                                <rect key="frame" x="327" y="293" width="49" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="bell.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="bell.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="bell:" destination="kJd-qN-Frn" eventType="touchUpInside" id="Uhw-qK-VNT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4y0-vZ-pDs">
-                                <rect key="frame" x="20" y="214" width="50" height="50"/>
+                                <rect key="frame" x="18" y="213" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="gearshape.fill" catalog="system" renderingMode="hierarchical-single">
-                                        <hierarchicalColors>
-                                            <color systemColor="linkColor"/>
-                                            <color systemColor="secondaryLabelColor"/>
-                                            <color systemColor="tertiaryLabelColor"/>
-                                        </hierarchicalColors>
-                                    </imageReference>
+                                    <imageReference key="image" image="gearshape.fill" catalog="system" renderingMode="original"/>
                                 </state>
                                 <connections>
                                     <action selector="gearshape:" destination="kJd-qN-Frn" eventType="touchUpInside" id="jv8-TA-e5J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLd-lf-u4s">
+                                <rect key="frame" x="331" y="59" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="paintpalette.fill" catalog="system" renderingMode="original"/>
+                                </state>
+                                <connections>
+                                    <action selector="ColorButton:" destination="kJd-qN-Frn" eventType="touchUpInside" id="nIq-GJ-jzv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-ra-ug6">
+                                <rect key="frame" x="18" y="59" width="111" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="キャンセル">
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="kJd-qN-Frn" eventType="touchUpInside" id="4jd-rA-jQa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bax-QA-8kH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fqb-er-9zc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9t1-DV-7Bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1390" y="2271"/>
+            <point key="canvasLocation" x="1385.4961832061067" y="2270.4225352112676"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -546,17 +488,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-HI-RmI">
-                                <rect key="frame" x="6" y="59" width="81" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="＜ 戻る"/>
-                                <connections>
-                                    <action selector="backButton:" destination="zEA-f0-fOY" eventType="touchUpInside" id="dbP-6n-A6a"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="y0R-Yj-Zxn">
-                                <rect key="frame" x="318" y="59" width="59" height="35"/>
+                                <rect key="frame" x="317" y="58" width="60" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="保存"/>
@@ -659,6 +592,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFx-HI-RmI">
+                                <rect key="frame" x="16" y="58" width="79" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <connections>
+                                    <action selector="backButton:" destination="zEA-f0-fOY" eventType="touchUpInside" id="dbP-6n-A6a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NI1-Pw-18j"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -941,8 +883,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sZy-Go-qNf"/>
-        <segue reference="j2D-Ti-MDu"/>
+        <segue reference="9k9-4z-cB0"/>
+        <segue reference="1O1-zC-WZ7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
@@ -957,6 +899,7 @@
         <image name="message.circle.fill" catalog="system" width="128" height="123"/>
         <image name="mic.square.fill" catalog="system" width="128" height="114"/>
         <image name="paintbrush" catalog="system" width="122" height="128"/>
+        <image name="paintpalette.fill" catalog="system" width="128" height="105"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <image name="trash.fill" catalog="system" width="119" height="128"/>

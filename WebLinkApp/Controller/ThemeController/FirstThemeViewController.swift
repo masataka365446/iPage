@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstThemeViewController: UIViewController {
+class FirstThemeViewController: UIViewController, UIColorPickerViewControllerDelegate {
     
     
     override func viewDidLoad() {
@@ -19,6 +19,34 @@ class FirstThemeViewController: UIViewController {
     
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func ColorButton(_ sender: Any) {
+        showColorPicker()
+    }
+    func showColorPicker(){
+        let colorPicker = UIColorPickerViewController()
+        colorPicker.selectedColor = UIColor.black // 初期カラー
+        colorPicker.delegate = self
+        colorPicker.supportsAlpha = false // 透過度設定のスライドを隠す
+        self.present(colorPicker, animated: true, completion: nil)
+    }
+    func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController) {
+        // 色を選択したときの処理
+        print("選択した色: \(viewController.selectedColor)")
+        let color: UIColor = viewController.selectedColor
+        let colorData: Data = try! NSKeyedArchiver.archivedData(withRootObject: color, requiringSecureCoding: UIColor.supportsSecureCoding)
+        UserDefaults.standard.set(colorData, forKey: "UIColor")
+    }
+        
+    func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
+        // カラーピッカーを閉じたときの処理
+        print("カラーピッカーを閉じました。")
+        print(viewController.selectedColor)
+        let color: UIColor = viewController.selectedColor
+        let colorData: Data = try! NSKeyedArchiver.archivedData(withRootObject: color, requiringSecureCoding: UIColor.supportsSecureCoding)
+        UserDefaults.standard.set(colorData, forKey: "UIColor")
     }
     
     
@@ -592,3 +620,4 @@ class FirstThemeViewController: UIViewController {
     */
 
 }
+

@@ -30,6 +30,17 @@ class TabBarViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if let colorData = UserDefaults.standard.data(forKey: "UIColor"){
+            let tabColor: Data = UserDefaults.standard.data(forKey: "UIColor")!
+            let color: UIColor = try! NSKeyedUnarchiver.unarchivedObject(ofClass: UIColor.self, from: tabColor)!
+            UITabBar.appearance().tintColor = color
+        }else{
+            UITabBar.appearance().tintColor = UIColor.tintColor
+        }
+        
+        
+        
+        
         let tab_01 = UserDefaults.standard.string(forKey: "icon_01")
 
         if let tab1 = tab_01{
@@ -119,6 +130,8 @@ class TabBarViewController: UITabBarController {
         }else{
             return
         }
+        
+        
         
         
         
